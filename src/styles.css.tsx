@@ -1,10 +1,10 @@
 import { style } from "@vanilla-extract/css";
 import { vars } from "./theme.css";
 
-const grad = `  linear-gradient(-90deg,rgba(255, 255, 255, 0.075)1px,transparent 1px    ),    
-linear-gradient(rgba(255, 255, 255, 0.075)1px 1px, transparent 1px),    
-linear-gradient(-90deg, rgba(255, 255, 255, 0.075)1px 1px, transparent 1px),    
-linear-gradient(rgba(255, 255, 255, 0.075)1px 1px, transparent 1px),    
+const grad = `  linear-gradient(-90deg,rgba(255, 255, 255, 0.04)1px,transparent 1px    ),    
+linear-gradient(rgba(255, 255, 255, 0.04)1px 1px, transparent 1px),    
+linear-gradient(-90deg, rgba(255, 255, 255, 0.04)1px 1px, transparent 1px),    
+linear-gradient(rgba(255, 255, 255, 0.04)1px 1px, transparent 1px),    
 linear-gradient(      transparent 3px,      #000000 3px,#000000 78px, transparent 78px    ),    
 linear-gradient(-90deg, rgba(73, 73, 73,1) 1px, transparent 1px),    
 linear-gradient(      -90deg,      transparent 3px,      #000000 3px,#000000 78px,transparent 78px ),
