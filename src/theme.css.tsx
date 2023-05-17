@@ -9,8 +9,28 @@ export const root = createGlobalTheme(":root", {
   fontSize: "12px",
   margin: "0",
   padding: "0",
- 
 });
+
+const darkGrid = `  linear-gradient(-90deg,rgba(255, 255, 255, 0.04)1px,transparent 1px    ),    
+linear-gradient(rgba(255, 255, 255, 0.04)1px 1px, transparent 1px),    
+linear-gradient(-90deg, rgba(255, 255, 255, 0.04)1px 1px, transparent 1px),    
+linear-gradient(rgba(255, 255, 255, 0.04)1px 1px, transparent 1px),    
+linear-gradient(      transparent 3px,      #000000 3px,#000000 78px, transparent 78px    ),    
+linear-gradient(-90deg, rgba(73, 73, 73,1) 1px, transparent 1px),    
+linear-gradient(      -90deg,      transparent 3px,      #000000 3px,#000000 78px,transparent 78px ),
+linear-gradient(rgb(73, 73, 73, 1) 1px, transparent 1px), #000;
+
+`;
+
+const lightGrid = `linear-gradient(-90deg,rgba(0, 0, 0, 0.04)1px,transparent 1px    ),
+linear-gradient(rgba(0, 0, 0, 0.04)1px 1px, transparent 1px),
+linear-gradient(-90deg, rgba(0, 0, 0, 0.04)1px 1px, transparent 1px),
+linear-gradient(rgba(0, 0, 0, 0.04)1px 1px, transparent 1px),
+linear-gradient(      transparent 3px,      #fff 3px,#fff 78px, transparent 78px    ),
+linear-gradient(-90deg, rgba(12, 12, 12,1) 1px, transparent 1px),
+linear-gradient(      -90deg,      transparent 3px,      #fff 3px,#fff 78px,transparent 78px ),
+linear-gradient(rgb(12, 12, 12, 1) 1px, transparent 1px), #fff;
+`;
 
 export const theme = createThemeContract({
   styleTheme: {
@@ -24,12 +44,14 @@ export const theme = createThemeContract({
     buttonSecondary: null,
     focus: null,
     blur: null,
+    selected: null,
+    bgSize: null,
   },
 });
 
-export const themeDark = createTheme(theme, {
+export const darkTheme = createTheme(theme, {
   styleTheme: {
-    background: "#1f1f1f",
+    background: darkGrid,
     backgroundSecondary: "#2f2f2f",
     border: "#3f3f3f",
     textinPlaceHolder: "#5f5f5f",
@@ -39,12 +61,16 @@ export const themeDark = createTheme(theme, {
     buttonSecondary: "#bfbfbf",
     focus: "#cfcfcf",
     blur: "#dfdfdf",
+    selected: "",
+    bgSize: `4px 4px, 4px 4px, 
+80px 80px, 80px 80px, 80px 80px, 
+80px 80px,80px 80px, 80px 80px;`,
   },
 });
 
-export const themeLight = createTheme(theme, {
+export const lightTheme = createTheme(theme, {
   styleTheme: {
-    background: "#ffffff",
+    background: lightGrid,
     backgroundSecondary: "#efefef",
     border: "#dfdfdf",
     textinPlaceHolder: "#bfbfbf",
@@ -54,6 +80,10 @@ export const themeLight = createTheme(theme, {
     buttonSecondary: "#5f5f5f",
     focus: "#4f4f4f",
     blur: "#3f3f3f",
+    selected: "",
+    bgSize: `4px 4px, 4px 4px,
+80px 80px, 80px 80px, 80px 80px,
+80px 80px,80px 80px, 80px 80px`,
   },
 });
 
