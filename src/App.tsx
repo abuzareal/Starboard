@@ -1,3 +1,4 @@
+import Card from "./components/UI/Card";
 import { app, p } from "./styles.css";
 import "./theme.css";
 import { darkTheme, lightTheme } from "./theme.css";
@@ -6,7 +7,7 @@ function App() {
   return (
     <div>
       <div className={lightTheme}>
-        <div className={app}>
+        <Card className={app}>
           <h1>Dark Theme</h1>
           <p className={p}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
@@ -15,7 +16,8 @@ function App() {
             quibusdam, quia, quod voluptate voluptatem quos voluptatibus quas
             doloribus quidem voluptas.
           </p>
-        </div>
+         
+        </Card>
       </div>
     </div>
   );

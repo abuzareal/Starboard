@@ -18,3 +18,4 @@ export const p = style({
   color: vars.styleTheme.inputText,
   width: "50%",
 });
+

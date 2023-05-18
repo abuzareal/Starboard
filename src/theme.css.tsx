@@ -52,6 +52,8 @@ export const theme = createThemeContract({
     h3Color: null,
     h4Color: null,
     h5Color: null,
+    borderRadiusOuter: null,
+    borderRadiusInner: null,
   },
 });
 
@@ -75,13 +77,15 @@ export const darkTheme = createTheme(theme, {
     h3Color: "#fff",
     h4Color: "#fff",
     h5Color: "#fff",
+    borderRadiusOuter: "10px",
+    borderRadiusInner: "5px",
   },
 });
 
 export const lightTheme = createTheme(theme, {
   styleTheme: {
     background: lightGrid,
-    backgroundSecondary: "#efefef",
+    backgroundSecondary: "=#2a2a2a",
     border: "#dfdfdf",
     textinPlaceHolder: "#bfbfbf",
     inputText: "#9f9f9f",
@@ -98,6 +102,8 @@ export const lightTheme = createTheme(theme, {
     h3Color: "#000",
     h4Color: "#000",
     h5Color: "#000",
+    borderRadiusOuter: "10px",
+    borderRadiusInner: "5px"
   },
 });
 
