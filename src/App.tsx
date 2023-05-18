@@ -6,8 +6,8 @@ import { darkTheme, lightTheme } from "./theme.css";
 function App() {
   return (
     <div>
-      <div className={lightTheme}>
-        <Card className={app}>
+      <div className={`${darkTheme} ${app}`}>
+        <Card  >
           <h1>Dark Theme</h1>
           <p className={p}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
