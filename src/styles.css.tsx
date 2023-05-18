@@ -13,3 +13,8 @@ export const app = style({
   background: vars.styleTheme.background,
   backgroundSize: vars.styleTheme.bgSize,
 });
+
+export const p = style({
+  color: vars.styleTheme.inputText,
+  width: "50%",
+});
