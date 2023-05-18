@@ -46,6 +46,12 @@ export const theme = createThemeContract({
     blur: null,
     selected: null,
     bgSize: null,
+    pColor: null,
+    h1Color: null,
+    h2Color: null,
+    h3Color: null,
+    h4Color: null,
+    h5Color: null,
   },
 });
 
@@ -62,9 +68,13 @@ export const darkTheme = createTheme(theme, {
     focus: "#cfcfcf",
     blur: "#dfdfdf",
     selected: "",
-    bgSize: `4px 4px, 4px 4px, 
-80px 80px, 80px 80px, 80px 80px, 
-80px 80px,80px 80px, 80px 80px;`,
+    bgSize: `4px 4px, 4px 4px, 80px 80px, 80px 80px, 80px 80px, 80px 80px,80px 80px, 80px 80px;`,
+    pColor: "#fff",
+    h1Color: "#fff",
+    h2Color: "#fff",
+    h3Color: "#fff",
+    h4Color: "#fff",
+    h5Color: "#fff",
   },
 });
 
@@ -81,9 +91,13 @@ export const lightTheme = createTheme(theme, {
     focus: "#4f4f4f",
     blur: "#3f3f3f",
     selected: "",
-    bgSize: `4px 4px, 4px 4px,
-80px 80px, 80px 80px, 80px 80px,
-80px 80px,80px 80px, 80px 80px`,
+    bgSize: `4px 4px, 4px 4px, 80px 80px, 80px 80px, 80px 80px,80px 80px,80px 80px, 80px 80px`,
+    pColor: "#000",
+    h1Color: "#000",
+    h2Color: "#000",
+    h3Color: "#000",
+    h4Color: "#000",
+    h5Color: "#000",
   },
 });
 
