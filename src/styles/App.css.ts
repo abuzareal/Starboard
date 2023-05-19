@@ -23,9 +23,9 @@ export const p = style({
 
 export const h1 = style({
   color: vars.styleTheme.h1Color,
-  fontSize: "2.5rem",
+  fontSize: "1.5rem",
   fontWeight: "400",
-  margin: "0",
+  
 });
 
 export const container = style({
