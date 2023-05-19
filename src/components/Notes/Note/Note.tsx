@@ -5,9 +5,7 @@ import Draggable from "react-draggable";
 const Note = (props: any) => {
   return (
     <Draggable>
-      <Card className={noteStyle}>
-        {props.children}
-      </Card>
+      <Card className={noteStyle}>Sample Note</Card>
     </Draggable>
   );
 };
