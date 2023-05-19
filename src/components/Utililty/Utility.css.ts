@@ -7,10 +7,10 @@ export const untilStyle = style({
   alignItems: "center",
   width: "175px",
   height: "350px",
-  borderRadius: vars.dimensions.borderRadiusInner,
+  borderRadius: vars.dimensions.borderRadiusOuterOuter,
   position: "fixed",
-  boxShadow: "0px 0px 15px  #00000055",
+  boxShadow: vars.effects.boxShadow,
   backdropFilter: "blur(10px)",
-  WebkitBackdropFilter: "blur(10px)",
+
   right: "10px",
 });

@@ -20,9 +20,17 @@ function App() {
   };
   return (
     <div className={`${darkTheme} ${app}`}>
-      <Card className={cardStyle.glass}>
-        <h1 className={h1}>Notes</h1>
-      </Card>
+      <Notes />
+
+      <div className={container}>
+        <h1 className={h1}>StarBoard 👾</h1>
+        <p className={p}>A simple note taking app</p>
+        <ToggleThemeButton toggleTheme={toggleTheme} />
+        <Card className={cardStyle.glass}>
+          <Input />
+        </Card>
+        <Utility />
+      </div>
     </div>
   );
 }
