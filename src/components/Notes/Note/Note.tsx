@@ -1,5 +1,5 @@
-import Card from "./../Cards/Card";
-import { noteStyle } from "./Notes.css";
+import Card from "../../UI/Cards/Card";
+import { noteStyle } from "./Note.css";
 
 const Notes = (props: any) => {
   return (
