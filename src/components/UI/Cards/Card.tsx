@@ -3,7 +3,9 @@ import { cardStyle } from "./Card.css";
 
 const Card = (props: any) => {
   return (
-    <div className={`${cardStyle} + ${props.className}`}>{props.children}</div>
+    <div className={`${cardStyle.default} + ${props.className}`}>
+      {props.children}
+    </div>
   );
 };
 
