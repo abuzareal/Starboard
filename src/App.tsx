@@ -8,7 +8,7 @@ import { darkTheme, lightTheme } from "./styles/vars.css";
 function App() {
   return (
     <div>
-      <div className={`${lightTheme} ${app}`}>
+      <div className={`${darkTheme} ${app}`}>
         <h1 className={h1}>👾 Starboard 👾</h1>
         <Card>
           <h3>Dark Theme</h3>

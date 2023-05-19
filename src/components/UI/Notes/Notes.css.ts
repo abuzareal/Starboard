@@ -6,5 +6,5 @@ export const noteStyle = style({
   minHeight: "10px",
   height: "auto",
   maxWidth: "30%",
-  border: vars.styleTheme.notesborder,
+  border: `${vars.styleTheme.notesborder} !important`,
 });

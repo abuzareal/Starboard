@@ -3,7 +3,6 @@ import { vars } from "./vars.css";
 
 export const app = style({
   textAlign: "center",
-  fontFamily: `'Roboto', sans-serif`,
   color: vars.styleTheme.noteText,
   height: "100vh",
   display: "flex",
