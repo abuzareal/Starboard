@@ -7,6 +7,6 @@ export const cardStyle = style({
   background: vars.styleTheme.backgroundSecondary,
   minHeight: "12px",
   maxWidth: "30%",
-  padding: "0 0.75% 0 0.75%",
+  padding: "1%",
   margin: "1%",
 });

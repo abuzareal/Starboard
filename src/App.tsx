@@ -1,5 +1,5 @@
 import Card from "./components/UI/Cards/Card";
-import Notes from "./components/UI/Notes/Notes";
+import Notes from "./components/Notes/Notes";
 import { app, p, h1 } from "./styles/App.css";
 import "./styles/vars.css";
 import { darkTheme, lightTheme } from "./styles/vars.css";
@@ -7,6 +7,7 @@ import { darkTheme, lightTheme } from "./styles/vars.css";
 function App() {
   return (
     <div>
+      <Notes/>
       <div className={`${darkTheme} ${app}`}>
         <h1 className={h1}>👾 Starboard 👾</h1>
         <Card>
@@ -19,7 +20,6 @@ function App() {
             doloribus quidem voluptas.
           </p>
         </Card>
-        <Notes />
       </div>
     </div>
   );

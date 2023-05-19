@@ -12,6 +12,8 @@ export const app = style({
   justifyContent: "center",
   background: vars.styleTheme.background,
   backgroundSize: vars.styleTheme.bgSize,
+  position:"relative",
+  zIndex:"20"
 });
 
 export const p = style({
