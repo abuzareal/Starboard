@@ -1,12 +1,13 @@
-import React from 'react'
-import { notestyles } from './Notes.css';
+import React from "react";
+import Note from "./Note/Note";
+import { notestyles } from "./Notes.css";
 
 function Notes(props: any) {
   return (
     <div className={notestyles}>
-      
+      <Note />
     </div>
-  )
+  );
 }
 
-export default Notes
+export default Notes;

@@ -2,7 +2,7 @@ import Card from "../../UI/Cards/Card";
 import { noteStyle } from "./Note.css";
 import Draggable from "react-draggable";
 
-const Notes = (props: any) => {
+const Note = (props: any) => {
   return (
     <Draggable>
       <Card className={noteStyle}>
@@ -12,4 +12,4 @@ const Notes = (props: any) => {
   );
 };
 
-export default Notes;
+export default Note;

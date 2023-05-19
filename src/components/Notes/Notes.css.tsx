@@ -5,6 +5,6 @@ export const notestyles = style({
   width: "100%",
   border: "1px solid white",
   position: "absolute",
-  zIndex: "0",
-  background:"#f2f2f2"
+  zIndex: "3",
+  background: "#00000000",
 });
