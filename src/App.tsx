@@ -9,7 +9,7 @@ import Utility from "./components/Utililty/Utility";
 
 function App() {
   return (
-    <div className={`${lightTheme} ${app}`}>
+    <div className={`${darkTheme} ${app}`}>
       <Notes />
       <div className={container}>
         {/* <h1 className={h1}>👾 Starboard 👾</h1> */}
