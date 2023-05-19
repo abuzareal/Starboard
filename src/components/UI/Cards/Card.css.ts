@@ -1,12 +1,12 @@
 import { style } from "@vanilla-extract/css";
-import { vars } from "../../theme.css";
-
+import { vars } from "../../../styles/vars.css";
 
 export const cardStyle = style({
   textAlign: "left",
   borderRadius: vars.styleTheme.borderRadiusOuter,
   background: vars.styleTheme.backgroundSecondary,
-  border: "2px solid red",
-  minHeight: "200px",
-  maxWidth: "50%",
+  minHeight: "12px",
+  maxWidth: "30%",
+  padding: "0 0.75% 0 0.75%",
+  margin: "1%",
 });
