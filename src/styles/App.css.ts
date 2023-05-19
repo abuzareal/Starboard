@@ -3,34 +3,31 @@ import { vars } from "./vars.css";
 
 export const app = style({
   textAlign: "center",
-  color: vars.styleTheme.noteText,
+  color: vars.colors.textColor,
   minHeight: "100vh",
   minWidth: "100vw",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  background: vars.styleTheme.background,
-  backgroundSize: vars.styleTheme.bgSize,
+  background: vars.colors.backgroundColor,
+  backgroundSize: vars.dimensions.bgSize,
   position: "relative",
   zIndex: "0",
 });
 
 export const p = style({
-  color: vars.styleTheme.noteText,
+  color: vars.colors.textColor,
   width: "100%",
 });
 
 export const h1 = style({
-  color: vars.styleTheme.h1Color,
   fontSize: "1.5rem",
   fontWeight: "400",
-  
 });
 
 export const container = style({
   textAlign: "center",
-  color: vars.styleTheme.noteText,
   height: "100vh",
   display: "flex",
   flexDirection: "column",
@@ -38,5 +35,4 @@ export const container = style({
   justifyContent: "center",
   position: "relative",
   zIndex: "4",
-  
 });

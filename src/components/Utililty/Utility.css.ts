@@ -7,7 +7,7 @@ export const untilStyle = style({
   alignItems: "center",
   width: "175px",
   height: "350px",
-  borderRadius: vars.styleTheme.borderRadiusOuter,
+  borderRadius: vars.dimensions.borderRadiusInner,
   position: "fixed",
   boxShadow: "0px 0px 15px  #00000055",
   backdropFilter: "blur(10px)",

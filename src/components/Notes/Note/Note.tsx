@@ -1,11 +1,12 @@
 import Card from "../../UI/Cards/Card";
 import { noteStyle } from "./Note.css";
+import Draggable from "react-draggable";
 
 const Note = (props: any) => {
   return (
-    <Card className={noteStyle}>
-      <p>Sample note</p>
-    </Card>
+    <Draggable>
+      <Card className={noteStyle}>Sample Note</Card>
+    </Draggable>
   );
 };
 
