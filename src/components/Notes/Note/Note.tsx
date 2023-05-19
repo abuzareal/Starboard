@@ -1,7 +1,7 @@
 import Card from "../../UI/Cards/Card";
 import { noteStyle } from "./Note.css";
 
-const Notes = (props: any) => {
+const Note = (props: any) => {
   return (
     <Card className={noteStyle}>
       <p>Sample note</p>
@@ -9,4 +9,4 @@ const Notes = (props: any) => {
   );
 };
 
-export default Notes;
+export default Note;
