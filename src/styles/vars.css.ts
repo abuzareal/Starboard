@@ -76,7 +76,7 @@ export const darkTheme = createTheme(theme, {
   },
   effects: {
     boxShadow: "0px 0px 20px rgba(17,17,17,0.5)",
-    border: "1px solid rgba(238,238,238,0.5)",
+    border: "1px solid rgba(238,238,238,0.25)",
     blur: "blur(5px)",
   },
 });

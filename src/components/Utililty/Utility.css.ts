@@ -11,6 +11,6 @@ export const untilStyle = style({
   position: "fixed",
   boxShadow: vars.effects.boxShadow,
   backdropFilter: "blur(10px)",
-
   right: "10px",
+//  write after pseudo element
 });

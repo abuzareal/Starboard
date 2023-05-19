@@ -20,7 +20,7 @@ export const cardStyle = styleVariants({
     border: vars.effects.border,
     boxShadow: vars.effects.boxShadow,
     background: vars.colors.accentColor,
-    padding: "1%",
+    padding: "0.5%",
     margin: "1%",
     height: "auto",
   },
