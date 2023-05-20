@@ -17,11 +17,12 @@ export const app = style({
 });
 
 export const p = style({
-  color: vars.colors.textColor,
+  color: vars.colors.textColorSecondary,
   width: "100%",
 });
 
 export const h1 = style({
+  color: vars.colors.textColorSecondary,
   fontSize: "1.5rem",
   fontWeight: "400",
 });

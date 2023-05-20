@@ -3,8 +3,10 @@ import { vars } from "../../styles/vars.css";
 
 export const untilStyle = style({
   display: "flex",
-  justifyContent: "space-between",
+  justifyContent: "flex-start",
   alignItems: "center",
+  flexDirection: "column",
+  padding: "5px",
   width: "175px",
   height: "350px",
   borderRadius: vars.dimensions.borderRadiusOuterOuter,
@@ -12,5 +14,5 @@ export const untilStyle = style({
   boxShadow: vars.effects.boxShadow,
   backdropFilter: "blur(10px)",
   right: "10px",
-//  write after pseudo element
+  //  write after pseudo element
 });

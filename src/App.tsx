@@ -19,17 +19,19 @@ function App() {
     setTheme(!theme);
   };
   return (
-    <div className={`${darkTheme} ${app}`}>
+    <div className={`${theme ? darkTheme : lightTheme} ${app}`}>
       <Notes />
 
       <div className={container}>
         <h1 className={h1}>StarBoard 👾</h1>
         <p className={p}>A simple note taking app</p>
-        <ToggleThemeButton toggleTheme={toggleTheme} />
-        <Card className={cardStyle.glass}>
-          <Input />
-        </Card>
-        <Utility />
+        
+
+        <Input />
+
+        <Utility>
+          <ToggleThemeButton toggleTheme={toggleTheme} theme={theme} />
+        </Utility>
       </div>
     </div>
   );
