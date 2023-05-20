@@ -4,7 +4,9 @@ import { cardStyle } from "./../UI/Cards/Card.css";
 import { untilStyle } from "./Utility.css";
 
 const Utility = (props: any) => {
-  return <Card className={`${cardStyle.glassy} ${untilStyle}`}>Utility</Card>;
+  return (
+    <Card className={`${cardStyle.glass} ${untilStyle}`}>{props.children}</Card>
+  );
 };
 
 export default Utility;

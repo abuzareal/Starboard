@@ -4,5 +4,5 @@ import { vars } from "../../../styles/vars.css";
 export const noteStyle = style({
   height: "auto",
   maxWidth: "30%",
-  border: `${vars.styleTheme.notesborder} !important`,
+  border: `${vars.effects.border} !important`,
 });

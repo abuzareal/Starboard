@@ -3,14 +3,16 @@ import { vars } from "../../styles/vars.css";
 
 export const untilStyle = style({
   display: "flex",
-  justifyContent: "space-between",
+  justifyContent: "flex-start",
   alignItems: "center",
+  flexDirection: "column",
+  padding: "5px",
   width: "175px",
   height: "350px",
-  borderRadius: vars.styleTheme.borderRadiusOuter,
+  borderRadius: vars.dimensions.borderRadiusOuterOuter,
   position: "fixed",
-  boxShadow: "0px 0px 15px  #00000055",
+  boxShadow: vars.effects.boxShadow,
   backdropFilter: "blur(10px)",
-  WebkitBackdropFilter: "blur(10px)",
   right: "10px",
+  //  write after pseudo element
 });
