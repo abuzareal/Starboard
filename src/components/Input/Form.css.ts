@@ -1,6 +1,12 @@
 import { style } from "@vanilla-extract/css";
 import { vars } from "../../styles/vars.css";
 
+export const hoverStyle = style({
+  ":hover": {
+    boxShadow: `0px 40px 250px 10px ${vars.colors.accentColor}`,
+  },
+});
+
 export const formStyle = style({
   display: "flex",
   justifyContent: "space-between",
@@ -23,12 +29,12 @@ export const inputStyle = style({
   ":focus": {
     outline: "none",
     border: `1px solid ${vars.colors.accentColor}`,
-    boxShadow: `0 0 5px ${vars.colors.accentColor}`,
+    // boxShadow: `0 0 10px ${vars.colors.accentColor}`,
   },
 });
 
 export const buttonStyle = style({
-  width: "70px",
+  width: "60px",
   height: "60px",
   padding: "10px",
   marginLeft: "7px",
@@ -36,7 +42,7 @@ export const buttonStyle = style({
   border: vars.effects.border,
   background: vars.colors.accentColor,
   color: vars.colors.textColor,
-  fontSize: "1rem",
+  fontSize: "1.75rem",
   fontWeight: "400",
   textAlign: "center",
   cursor: "pointer",

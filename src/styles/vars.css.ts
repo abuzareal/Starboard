@@ -102,8 +102,7 @@ export const lightTheme = createTheme(theme, {
     bgSize: `4px 4px, 4px 4px, 80px 80px, 80px 80px, 80px 80px,80px 80px,80px 80px, 80px 80px`,
   },
   effects: {
-    boxShadow:
-      "0px 0px 20px  rgba(17,17,17,0.15) , -5px -5px 30px  #bc6ff122 inset",
+    boxShadow: "0px 0px 20px  rgba(17,17,17,0.15)",
     border: "1px solid rgba(17,17,17,0.25)",
     blur: "blur(5px)",
   },

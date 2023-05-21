@@ -34,6 +34,7 @@ function App() {
         </div>
         <Utility>
           <ToggleThemeButton toggleTheme={toggleTheme} theme={theme} />
+          <hr />
         </Utility>
       </div>
     </div>
