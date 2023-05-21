@@ -22,13 +22,9 @@ function App() {
     <div className={`${theme ? darkTheme : lightTheme} ${app}`}>
       <Notes />
 
+      <h1 className={h1}>StarBoard 👾</h1>
       <div className={container}>
-        <h1 className={h1}>StarBoard 👾</h1>
-        <p className={p}>A simple note taking app</p>
-        
-
         <Input />
-
         <Utility>
           <ToggleThemeButton toggleTheme={toggleTheme} theme={theme} />
         </Utility>

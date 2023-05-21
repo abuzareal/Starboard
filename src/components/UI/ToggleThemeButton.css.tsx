@@ -2,18 +2,13 @@ import { style } from "@vanilla-extract/css";
 import { vars } from "../../styles/vars.css";
 
 export const btnStyle = style({
-  display: "flex",
-  justifyContent: "flex-start",
-  alignItems: "center",
-  minWidth: "50%",
   height: "30px",
-  padding: "2px",
   background: vars.colors.glassBg,
   backdropFilter: "blur(10px)",
-  borderRadius: "40px",
+  borderRadius: "30px",
   border: vars.effects.border,
   position: "relative",
-  transform: "scale(0.8)",
+  transform: "scale(1)",
 });
 
 export const dark = style({
@@ -22,8 +17,13 @@ export const dark = style({
   width: "25px",
   height: "25px",
   borderRadius: "50%",
-  marginLeft: "0px",
-  padding: "2px",
+  color: "#000",
+  fontSize: "20px",
+  textAlign: "center",
+  display: "grid",
+  placeItems: "center",
+  marginLeft: "2px",
+ 
 });
 
 export const light = style({
@@ -31,5 +31,10 @@ export const light = style({
   width: "25px",
   height: "25px",
   borderRadius: "50%",
-  marginLeft: "calc(100% - 25px)",
+  marginLeft: "calc(100% - 27px)",
+  color: "#fff",
+  fontSize: "18px",
+  textAlign: "center",
+  display: "grid",
+  placeItems: "center",
 });

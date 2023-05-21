@@ -25,6 +25,8 @@ export const h1 = style({
   color: vars.colors.textColorSecondary,
   fontSize: "1.5rem",
   fontWeight: "400",
+  position: "absolute",
+  top: "10px",
 });
 
 export const container = style({
