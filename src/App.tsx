@@ -24,7 +24,14 @@ function App() {
 
       <h1 className={h1}>StarBoard 👾</h1>
       <div className={container}>
-        <Input />
+        <div
+          className="fixed"
+          style={{
+            position: "fixed",
+          }}
+        >
+          <Input />
+        </div>
         <Utility>
           <ToggleThemeButton toggleTheme={toggleTheme} theme={theme} />
         </Utility>

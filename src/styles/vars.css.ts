@@ -9,6 +9,8 @@ export const root = createGlobalTheme(":root", {
   fontSize: "12px",
   margin: "0",
   padding: "0",
+  boxSizing: "border-box",
+  scrollBehavior: "smooth",
 });
 
 const darkGrid = `  linear-gradient(-90deg,rgba(255, 255, 255, 0.05)1px,transparent 1px    ),    
@@ -75,7 +77,8 @@ export const darkTheme = createTheme(theme, {
     bgSize: `4px 4px, 4px 4px, 80px 80px, 80px 80px, 80px 80px,80px 80px,80px 80px, 80px 80px`,
   },
   effects: {
-    boxShadow: "0px 0px 20px rgba(17,17,17,0.5)",
+    boxShadow:
+      "0px 0px 20px rgba(17,17,17,0.5), -5px -5px 20px  #ffffff20 inset",
     border: "1px solid rgba(238,238,238,0.25)",
     blur: "blur(5px)",
   },
@@ -99,7 +102,8 @@ export const lightTheme = createTheme(theme, {
     bgSize: `4px 4px, 4px 4px, 80px 80px, 80px 80px, 80px 80px,80px 80px,80px 80px, 80px 80px`,
   },
   effects: {
-    boxShadow: "0px 0px 20px  rgba(17,17,17,0.15)",
+    boxShadow:
+      "0px 0px 20px  rgba(17,17,17,0.15) , -5px -5px 30px  #bc6ff122 inset",
     border: "1px solid rgba(17,17,17,0.25)",
     blur: "blur(5px)",
   },
