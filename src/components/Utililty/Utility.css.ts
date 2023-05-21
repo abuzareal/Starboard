@@ -6,13 +6,15 @@ export const untilStyle = style({
   justifyContent: "flex-start",
   alignItems: "center",
   flexDirection: "column",
-  padding: "5px",
+  padding: "7px",
   width: "175px",
-  height: "350px",
+  height: "175px",
   borderRadius: vars.dimensions.borderRadiusOuterOuter,
   position: "fixed",
-  boxShadow: vars.effects.boxShadow,
-  backdropFilter: "blur(10px)",
+  boxShadow: `${vars.effects.boxShadow}`,
+  backdropFilter: "blur(10px) ",
   right: "10px",
+
+  
   //  write after pseudo element
 });

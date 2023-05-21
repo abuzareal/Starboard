@@ -4,16 +4,17 @@ import { vars } from "./vars.css";
 export const app = style({
   textAlign: "center",
   color: vars.colors.textColor,
-  minHeight: "100vh",
-  minWidth: "100vw",
+  height: "100vh",
+  width: "100vw",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
   background: vars.colors.backgroundColor,
   backgroundSize: vars.dimensions.bgSize,
-  position: "relative",
+  position: "absolute",
   zIndex: "0",
+  overflow: "scroll",
 });
 
 export const p = style({
@@ -25,6 +26,8 @@ export const h1 = style({
   color: vars.colors.textColorSecondary,
   fontSize: "1.5rem",
   fontWeight: "400",
+  position: "fixed",
+  top: "10px",
 });
 
 export const container = style({
@@ -34,6 +37,5 @@ export const container = style({
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  position: "relative",
   zIndex: "4",
 });

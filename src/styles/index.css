@@ -6,7 +6,21 @@
   transition: all 0.1s ease;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   margin: 0;
   font-family: "Maven Pro", sans-serif !important;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #55555555;
+  width: 80%;
+  margin: 10px;
 }

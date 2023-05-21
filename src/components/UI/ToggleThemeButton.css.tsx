@@ -2,34 +2,41 @@ import { style } from "@vanilla-extract/css";
 import { vars } from "../../styles/vars.css";
 
 export const btnStyle = style({
-  display: "flex",
-  justifyContent: "flex-start",
-  alignItems: "center",
-  minWidth: "50%",
-  height: "30px",
-  padding: "2px",
+  height: "auto",
   background: vars.colors.glassBg,
   backdropFilter: "blur(10px)",
-  borderRadius: "40px",
+  borderRadius: "30px",
   border: vars.effects.border,
   position: "relative",
-  transform: "scale(0.8)",
+  width: "75px",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "flex-start",
 });
 
 export const dark = style({
-  background: "#fff",
-  border: "1px solid #000",
+  background: vars.colors.glassBg,
+  border: vars.effects.border,
   width: "25px",
   height: "25px",
   borderRadius: "50%",
-  marginLeft: "0px",
-  padding: "2px",
+  color: "#fff",
+  fontSize: "16px",
+  textAlign: "center",
+  marginLeft: "2px",
+  padding: "3px",
+  margin: "2px",
 });
 
 export const light = style({
-  background: "#000",
+  background: vars.colors.glassBg,
+  border: vars.effects.border,
   width: "25px",
   height: "25px",
   borderRadius: "50%",
-  marginLeft: "calc(100% - 25px)",
+  margin: " 2px calc(100% - 26px)",
+  color: "#000",
+  fontSize: "16px",
+  padding: "3px",
+  textAlign: "center",
 });
