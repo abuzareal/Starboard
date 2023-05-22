@@ -29,6 +29,7 @@ export const inputStyle = style({
   ":focus": {
     outline: "none",
     border: `1px solid ${vars.colors.accentColor}`,
+    transition: vars.effects.transitionSlow,
     // boxShadow: `0 0 10px ${vars.colors.accentColor}`,
   },
 });

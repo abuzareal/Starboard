@@ -14,7 +14,8 @@ export const app = style({
   backgroundSize: vars.dimensions.bgSize,
   position: "absolute",
   zIndex: "0",
-  overflow: "scroll",
+ 
+  // overflow: "scroll",
 });
 
 export const p = style({

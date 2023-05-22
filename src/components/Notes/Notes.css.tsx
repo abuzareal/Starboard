@@ -4,6 +4,6 @@ export const notestyles = style({
   height: "100%",
   width: "100%",
   position: "absolute",
-  zIndex: "10000",
+  zIndex: "1",
   background: "#00000000",
 });
