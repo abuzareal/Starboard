@@ -4,11 +4,14 @@ import Draggable from "react-draggable";
 
 const Note = (props: any) => {
   return (
-    <Draggable
-      
-    
-    >
-      <Card className={noteStyle}>Sample Note</Card>
+    <Draggable defaultPosition={{ x: 0, y: 0 }}>
+      <div
+        style={{
+          cursor: "grab",
+        }}
+      >
+        <Card className={noteStyle}>Sample Note</Card>
+      </div>
     </Draggable>
   );
 };

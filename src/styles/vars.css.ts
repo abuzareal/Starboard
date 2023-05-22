@@ -56,6 +56,9 @@ export const theme = createThemeContract({
     boxShadow: null,
     border: null,
     blur: null,
+    transitionSlow: null,
+    transitionMedium: null,
+    transitionFast: null,
   },
 });
 
@@ -81,6 +84,9 @@ export const darkTheme = createTheme(theme, {
       "0px 0px 20px rgba(17,17,17,0.5), -5px -5px 20px  #ffffff20 inset",
     border: "1px solid rgba(238,238,238,0.25)",
     blur: "blur(5px)",
+    transitionSlow: "all 0.5s ease-in-out",
+    transitionMedium: "all 0.3s ease-in-out",
+    transitionFast: "all 0.1s ease-in-out",
   },
 });
 
@@ -105,6 +111,9 @@ export const lightTheme = createTheme(theme, {
     boxShadow: "0px 0px 20px  rgba(17,17,17,0.15)",
     border: "1px solid rgba(17,17,17,0.25)",
     blur: "blur(5px)",
+    transitionSlow: "all 0.5s ease-in-out",
+    transitionMedium: "all 0.3s ease-in-out",
+    transitionFast: "all 0.1s ease-in-out",
   },
 });
 export const vars = { ...root, ...theme };
