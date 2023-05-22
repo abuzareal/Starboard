@@ -1,7 +1,7 @@
 import Card from "../UI/Cards/Card";
 import { cardStyle } from "../UI/Cards/Card.css";
 import { buttonStyle, formStyle, hoverStyle, inputStyle } from "./Form.css";
-import { BsRocketTakeoff, BsRocketTakeoffFill } from "react-icons/bs";
+import { BsRocketTakeoffFill } from "react-icons/bs";
 
 const Form = () => {
   return (

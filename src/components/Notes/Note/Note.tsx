@@ -4,7 +4,10 @@ import Draggable from "react-draggable";
 
 const Note = (props: any) => {
   return (
-    <Draggable>
+    <Draggable
+      
+    
+    >
       <Card className={noteStyle}>Sample Note</Card>
     </Draggable>
   );
