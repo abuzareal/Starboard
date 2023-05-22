@@ -5,8 +5,7 @@ import Draggable from "react-draggable";
 import moment from "moment";
 
 const Note = (props: any) => {
-  const timeTillHour = moment().startOf("hour").fromNow();
-  const timeStamp = moment().format("MMM Do") + " " + moment().format("LT");
+  
 
   const [isDragged, setIsDragged] = useState(false);
   return (
