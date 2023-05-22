@@ -24,7 +24,7 @@ const Note = (props: any) => {
           doloremque quia nobis amet veritatis assumenda harum aliquam dolor
           voluptates eligendi!
         </Card>
-        <p className={p}>{timeStamp}</p>
+        <p className={p}>{}</p>
       </div>
     </Draggable>
   );

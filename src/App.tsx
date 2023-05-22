@@ -8,6 +8,7 @@ import Utility from "./components/Utililty/Utility";
 
 import { useState } from "react";
 import ToggleThemeButton from "./components/UI/ToggleThemeButton";
+import Footer from "./components/Footer";
 
 function App() {
   const [theme, setTheme] = useState(false);
@@ -33,6 +34,7 @@ function App() {
           <hr />
         </Utility>
       </div>
+      <Footer />
     </div>
   );
 }
