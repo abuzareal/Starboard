@@ -16,14 +16,33 @@ const pulsate = keyframes({
 export const animation = style({
   animation: `${pulsate} 1.3s ease infinite`,
   height: "auto",
-  maxWidth: "30%",
+  maxWidth: "20%",
   border: `${vars.effects.border} !important`,
   position: "sticky",
 });
 
 export const noteStyle = style({
   height: "auto",
-  maxWidth: "30%",
+  maxWidth: "20%",
   border: `${vars.effects.border} !important`,
   position: "sticky",
+});
+
+export const divStyle = style({
+  cursor: "grab",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "flex-start",
+  alignItems: "flex-start",
+  height: "100px",
+  maxWidth: "auto",
+});
+
+export const p = style({
+  color: vars.colors.textColorSecondary,
+  opacity: "0.8",
+  fontSize: "12px",
+  position: "relative",
+  bottom: "12px",
+  left: "19px",
 });
