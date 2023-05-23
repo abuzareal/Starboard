@@ -9,6 +9,8 @@ export const toolButton = style({
   fontSize: "25px",
   position: "absolute",
   top: "10px",
+  backgroundColor: "#bc6ff1",
+  border: "1px solid #892CDC",
 });
 
 export const toolDiv = style({
@@ -16,9 +18,11 @@ export const toolDiv = style({
   marginTop: "10px",
   height: "150px",
   width: "150px",
-    borderRadius: "10px",
+  borderRadius: "10px",
   position: "absolute",
   top: "60px",
+  textAlign: "center",
+  paddingTop: "10px",
 });
 
 export const toolKit = style({
@@ -31,5 +35,5 @@ export const toolKit = style({
   height: "auto",
   minHeight: "200px",
   width: "200px",
-//   border: "1px solid white",
+  //   border: "1px solid white",
 });
