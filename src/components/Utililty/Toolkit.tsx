@@ -4,7 +4,7 @@ import { toolButton, toolDiv, toolKit } from "./Toolkit.css";
 function Toolkit(props: any) {
   return (
     <div className={toolKit}>
-      <button className={toolButton} onClick={props.setToolkit}>
+      <button className={toolButton} onClick={props.handleToolbar}>
         I
       </button>
       {props.toolkit && (

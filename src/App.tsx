@@ -14,20 +14,19 @@ import items from "./models/mockItem";
 import Footer from "./components/Footer";
 import Toolkit from "./components/Utililty/Toolkit";
 
-
 function App() {
   const [theme, setTheme] = useState(true);
   const [item, setItem] = useState("");
   const [list, setList] = useState(items);
   const [isValid, setIsValid] = useState(true);
-  const[toolkit, setToolkit] = useState(false)
+  const [toolkit, setToolkit] = useState(false);
   const toggleTheme = () => {
     setTheme(!theme);
   };
 
   const handleToolbar = () => {
     setToolkit(!toolkit);
-  }
+  };
 
   const changeHandler = (e: any) => {
     setItem(e.target.value);
@@ -56,7 +55,7 @@ function App() {
     <div className={`${theme ? darkTheme : lightTheme} ${app}`}>
       <Notes notes={list} />
       <h1 className={h1}>StarBoard 👾</h1>
-      
+
       <div className={container}>
         <div
           style={{
@@ -69,7 +68,7 @@ function App() {
             item={item}
           />
         </div>
-        <Toolkit toolkit={toolkit} setToolkit={setToolkit}/>
+        <Toolkit toolkit={toolkit} handleToolbar={handleToolbar} />
         <Utility>
           <ToggleThemeButton toggleTheme={toggleTheme} theme={theme} />
           <hr />
