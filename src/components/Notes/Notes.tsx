@@ -5,7 +5,16 @@ import { notestyles } from "./Notes.css";
 function Notes(props: any) {
   return (
     <div className={notestyles}>
-      <Note />
+      {props.notes.map((note: any) => (
+        <Note
+          key={note.id}
+          note={note.note}
+          timestamp={note.timestamp}
+          id={note.id}
+          xpos={note.xpos}
+          ypos={note.ypos}
+        />
+      ))}
     </div>
   );
 }
