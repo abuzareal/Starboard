@@ -23,6 +23,9 @@ const Note = (props: any) => {
           <hr />
           <p className={p}>{props.timestamp}</p>
         </Card>
+
+        <p className={p}>{}</p>
+
       </div>
     </Draggable>
   );
