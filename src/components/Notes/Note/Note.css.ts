@@ -18,31 +18,39 @@ export const animation = style({
   height: "auto",
   maxWidth: "20%",
   border: `${vars.effects.border} !important`,
-  position: "sticky",
+  position: "relative",
+  cursor: "move",
+
+  "@media": {
+    "screen and (max-width: 768px)": {
+      maxWidth: "70%",
+    },
+  },
 });
 
 export const noteStyle = style({
   height: "auto",
   maxWidth: "20%",
   border: `${vars.effects.border} !important`,
-  position: "sticky",
+  position: "relative",
+  cursor:"move",
+
+  "@media": {
+    "screen and (max-width: 768px)": {
+      maxWidth: "70%",
+    },
+  },
 });
 
 export const divStyle = style({
-  cursor: "grab",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "flex-start",
-  alignItems: "flex-start",
-  height: "100px",
-  maxWidth: "auto",
+  height: "fit-content",
+  padding: "10px",
 });
 
 export const p = style({
   color: vars.colors.textColorSecondary,
   opacity: "0.8",
   fontSize: "12px",
-  position: "relative",
-  bottom: "12px",
-  left: "19px",
+  position: "absolute",
+  marginTop: "10px",
 });

@@ -16,10 +16,13 @@ const Note = (props: any) => {
       }}
     >
       <div className={divStyle}>
-        <Card className={` ${isDragged ? animation : noteStyle}`}>
+        <Card className={` ${isDragged ? (animation) : noteStyle}`}>
           {props.note}
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+          adipisci sequi ab facere ipsum amet porro quae et optio hic?
+          <hr />
+          <p className={p}>{props.timestamp}</p>
         </Card>
-        <p className={p}>{props.timestamp}</p>
       </div>
     </Draggable>
   );
