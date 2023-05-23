@@ -14,7 +14,7 @@ export const untilStyle = style({
   boxShadow: `${vars.effects.boxShadow}`,
   backdropFilter: "blur(10px) ",
   right: "10px",
-  zIndex: "2",
+  zIndex: "1000000000000",
 
 
   //  write after pseudo element

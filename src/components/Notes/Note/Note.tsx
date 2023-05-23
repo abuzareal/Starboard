@@ -2,15 +2,12 @@ import { useState } from "react";
 import Card from "../../UI/Cards/Card";
 import { animation, divStyle, noteStyle, p } from "./Note.css";
 import Draggable from "react-draggable";
-import moment from "moment";
 
 const Note = (props: any) => {
-  
-
   const [isDragged, setIsDragged] = useState(false);
   return (
     <Draggable
-      defaultPosition={{ x: 0, y: 0 }}
+      defaultPosition={{ x: props.xpos, y: props.ypos }}
       onStart={() => {
         setIsDragged(true);
       }}
@@ -19,12 +16,16 @@ const Note = (props: any) => {
       }}
     >
       <div className={divStyle}>
-        <Card className={` ${isDragged ? animation : noteStyle}`}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-          doloremque quia nobis amet veritatis assumenda harum aliquam dolor
-          voluptates eligendi!
+        <Card className={` ${isDragged ? (animation) : noteStyle}`}>
+          {props.note}
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+          adipisci sequi ab facere ipsum amet porro quae et optio hic?
+          <hr />
+          <p className={p}>{props.timestamp}</p>
         </Card>
+
         <p className={p}>{}</p>
+
       </div>
     </Draggable>
   );
