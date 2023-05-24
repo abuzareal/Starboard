@@ -15,12 +15,17 @@ const Note = (props: any) => {
         setIsDragged(false);
       }}
     >
-      <div className={divStyle}>
-        <Card className={` ${isDragged ? (animation) : noteStyle}`}>
-          {props.note}
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-          adipisci sequi ab facere ipsum amet porro quae et optio hic?
-          <hr />
+      <div
+        style={{
+          border: "1px solid #fff",
+          minWidth: "fit-content",
+          width: "fit-content",
+        }}
+      >
+        <Card className={` ${isDragged ? animation : noteStyle}`}>
+          <p
+          >{props.note}</p>
+
           <p className={p}>{props.timestamp}</p>
         </Card>
       </div>

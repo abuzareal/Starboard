@@ -15,36 +15,38 @@ const pulsate = keyframes({
 
 export const animation = style({
   animation: `${pulsate} 1.3s ease infinite`,
-  height: "auto",
-  maxWidth: "20%",
+  maxWidth: "100%",
   border: `${vars.effects.border} !important`,
   position: "relative",
   cursor: "move",
 
   "@media": {
     "screen and (max-width: 768px)": {
-      maxWidth: "70%",
+      maxWidth: "100%",
     },
   },
 });
 
 export const noteStyle = style({
   height: "auto",
-  maxWidth: "20%",
+  width: "fit-content ",
+  padding: "5px",
   border: `${vars.effects.border} !important`,
   position: "relative",
-  cursor:"move",
+  cursor: "move",
 
   "@media": {
     "screen and (max-width: 768px)": {
-      maxWidth: "70%",
+      maxWidth: "100%",
     },
   },
 });
 
 export const divStyle = style({
-  height: "fit-content",
+  width: "fit-content",
+  minWidth: "200px",
   padding: "10px",
+  border: vars.effects.border,
 });
 
 export const p = style({
