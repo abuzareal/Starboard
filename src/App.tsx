@@ -6,13 +6,12 @@ import { darkTheme, lightTheme } from "./styles/vars.css";
 import Input from "./components/Input/Form";
 import Utility from "./components/Utililty/Utility";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ToggleThemeButton from "./components/UI/ToggleThemeButton";
-
 import items from "./models/mockItem";
-
 import Footer from "./components/Footer";
 import Toolkit from "./components/Utililty/Toolkit";
+import Loader from "./components/UI/Loader";
 
 function App() {
   const [theme, setTheme] = useState(true);
@@ -20,6 +19,15 @@ function App() {
   const [list, setList] = useState(items);
   const [isValid, setIsValid] = useState(true);
   const [toolkit, setToolkit] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000 );
+  }, []);
+
   const toggleTheme = () => {
     setTheme(!theme);
   };
@@ -51,7 +59,9 @@ function App() {
     }
   };
 
-  return (
+  return loading ? (
+    <Loader />
+  ) : (
     <div className={`${theme ? darkTheme : lightTheme} ${app}`}>
       <Notes notes={list} />
       <h1 className={h1}>StarBoard 👾</h1>

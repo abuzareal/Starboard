@@ -9,7 +9,7 @@ function Toolkit(props: any) {
         I
       </button>
       {props.toolkit && (
-    <div className={`${cardStyle.glass}  ${toolDiv}`}>
+        <div className={`${cardStyle.glass}  ${toolDiv}`}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
           ad.
         </div>
