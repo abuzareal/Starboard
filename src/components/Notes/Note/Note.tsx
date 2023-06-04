@@ -15,14 +15,19 @@ const Note = (props: any) => {
         setIsDragged(false);
       }}
     >
-      <div className={divStyle}>
+      <div
+        style={{
+          border: "1px solid #fff",
+          minWidth: "fit-content",
+          width: "fit-content",
+        }}
+      >
         <Card className={` ${isDragged ? animation : noteStyle}`}>
-          {props.note}
-          <hr />
+          <p
+          >{props.note}</p>
+
           <p className={p}>{props.timestamp}</p>
         </Card>
-
-        <p className={p}>{}</p>
       </div>
     </Draggable>
   );
