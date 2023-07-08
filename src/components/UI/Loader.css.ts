@@ -4,7 +4,6 @@ import { vars } from "../../styles/vars.css";
 export const loader = style({
   width: "100%",
   height: "100vh",
-
   backgroundColor: "#111",
   display: "flex",
   alignItems: "center",
