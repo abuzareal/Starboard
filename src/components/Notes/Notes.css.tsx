@@ -1,8 +1,8 @@
 import { style } from "@vanilla-extract/css";
 
 export const notestyles = style({
-  height: "100%",
-  width: "100%",
+  height: "100vh",
+  width: "100vw",
   position: "absolute",
   zIndex: "1",
   background: "#00000000",
