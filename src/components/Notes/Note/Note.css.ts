@@ -16,6 +16,7 @@ const pulsate = keyframes({
 export const animation = style({
   animation: `${pulsate} 1.3s ease infinite`,
   maxWidth: "100%",
+  padding:"5px",  
   border: `${vars.effects.border} !important`,
   position: "relative",
   cursor: "move",

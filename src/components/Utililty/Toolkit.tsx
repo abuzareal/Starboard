@@ -1,18 +1,21 @@
-import React from "react";
 import { toolButton, toolDiv, toolKit } from "./Toolkit.css";
-import { cardStyle } from "../UI/Cards/Card.css";
+import ToggleThemeButton from "../UI/ToggleThemeButton";
+import Utility from "./Utility";
+import { CgMenuGridR } from "react-icons/cg";
 
 function Toolkit(props: any) {
   return (
     <div className={toolKit}>
-      <button className={toolButton} onClick={props.handleToolbar}>
-        I
-      </button>
+      <CgMenuGridR className={toolButton} onClick={props.handleToolbar} />
+
       {props.toolkit && (
-        <div className={`${cardStyle.glass}  ${toolDiv}`}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-          ad.
-        </div>
+        <Utility>
+          <ToggleThemeButton
+            toggleTheme={props.toggleTheme}
+            theme={props.theme}
+          />
+          <hr />
+        </Utility>
       )}
     </div>
   );

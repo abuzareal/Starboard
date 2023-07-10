@@ -1,17 +1,15 @@
-import Notes from "./components/Notes/Notes";
-import { app, h1, container } from "./styles/App.css";
-import "./styles/vars.css.ts_";
-import { darkTheme, lightTheme } from "./styles/vars.css";
-
-import Input from "./components/Input/Form";
-import Utility from "./components/Utililty/Utility";
-
 import { useState, useEffect } from "react";
-import ToggleThemeButton from "./components/UI/ToggleThemeButton";
+
+import Notes from "./components/Notes/Notes";
+import Input from "./components/Input/Form";
 import items from "./models/mockItem";
 import Footer from "./components/Footer";
 import Toolkit from "./components/Utililty/Toolkit";
 import Loader from "./components/UI/Loader";
+
+import { app, h1, container } from "./styles/App.css";
+import "./styles/vars.css.ts_";
+import { darkTheme, lightTheme } from "./styles/vars.css";
 
 function App() {
   const [theme, setTheme] = useState(true);
@@ -25,15 +23,15 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2000 );
+    }, 2000);
   }, []);
-
-  const toggleTheme = () => {
-    setTheme(!theme);
-  };
 
   const handleToolbar = () => {
     setToolkit(!toolkit);
+  };
+
+  const toggleTheme = () => {
+    setTheme(!theme);
   };
 
   const changeHandler = (e: any) => {
@@ -78,11 +76,7 @@ function App() {
             item={item}
           />
         </div>
-        <Toolkit toolkit={toolkit} handleToolbar={handleToolbar} />
-        <Utility>
-          <ToggleThemeButton toggleTheme={toggleTheme} theme={theme} />
-          <hr />
-        </Utility>
+        <Toolkit toolkit={toolkit} handleToolbar={handleToolbar} toggleTheme={toggleTheme} theme={theme} />
       </div>
       <Footer />
     </div>

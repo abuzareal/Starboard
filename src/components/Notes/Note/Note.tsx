@@ -17,14 +17,12 @@ const Note = (props: any) => {
     >
       <div
         style={{
-          border: "1px solid #fff",
           minWidth: "fit-content",
           width: "fit-content",
         }}
       >
         <Card className={` ${isDragged ? animation : noteStyle}`}>
-          <p
-          >{props.note}</p>
+          <p>{props.note}</p>
 
           <p className={p}>{props.timestamp}</p>
         </Card>

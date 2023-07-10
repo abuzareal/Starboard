@@ -2,15 +2,13 @@ import { style } from "@vanilla-extract/css";
 import { vars } from "../../styles/vars.css";
 
 export const toolButton = style({
-  height: "50px",
-  width: "50px",
+  height: "40px",
+  width: "40px",
   borderRadius: "50%",
   cursor: "pointer",
   fontSize: "25px",
   position: "absolute",
-  top: "10px",
-  backgroundColor: "#bc6ff1",
-  border: "1px solid #892CDC",
+  top: "45px",
 });
 
 export const toolDiv = style({
@@ -35,5 +33,4 @@ export const toolKit = style({
   height: "auto",
   minHeight: "200px",
   width: "200px",
-  //   border: "1px solid white",
 });
